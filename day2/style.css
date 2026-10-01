@@ -1,4 +1,3 @@
-/* 1. Reset and base styles */
 *,
 *::before,
 *::after {
@@ -10,12 +9,10 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f4f6f8;
   color: #222;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
-/* 2. Header */
 header {
-  background-color: #8e0000;
+  background-color: #8e0000; 
   color: white;
   text-align: center;
   padding: 24px 16px 16px;
@@ -23,9 +20,9 @@ header {
 
 header h1 {
   margin: 0;
+
 }
 
-/* 3. Navigation with Flexbox */
 nav {
   display: flex;
   justify-content: center;
@@ -34,7 +31,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #ffffff; /* redundant white, but whatever */
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 6px;
@@ -45,7 +42,6 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 4. Main content and section cards */
 main {
   max-width: 760px;
   margin: 24px auto;
@@ -53,7 +49,7 @@ main {
 }
 
 section {
-  background: white;
+  background: #ffffff; /* explicit white background */
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -66,7 +62,6 @@ h3 {
   margin-top: 0;
 }
 
-/* 5. Features as a responsive grid of cards */
 .features {
   list-style: none;
   padding: 0;
@@ -82,7 +77,6 @@ h3 {
   border-radius: 6px;
 }
 
-/* 6. Shortcuts table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -99,7 +93,7 @@ th {
   background-color: #f0f0f0;
 }
 
-/* 7. Forms */
+/* 7. Forms - keeping this comment as is */
 form {
   display: flex;
   flex-direction: column;
@@ -138,14 +132,12 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* 8. Footer */
 footer {
   text-align: center;
   color: #777;
   padding: 16px;
 }
 
-/* 9. Small screens */
 @media (max-width: 600px) {
   header {
     padding: 16px 12px 12px;
