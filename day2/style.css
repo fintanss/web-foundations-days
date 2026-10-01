@@ -1,153 +1,152 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #222;
-  line-height: 1.6; }
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
 
 header {
-  background-color: #8e0000; 
-  color: white;
-  text-align: center;
-  padding: 24px 16px 16px;
+    background-color: #f18bd8;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 24px 16px 16px;
 }
 
 header h1 {
-  margin: 0;
-
+    margin: 0;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
 }
 
 nav a {
-  color: #ffffff; /* redundant white, but whatever */
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
+    color: rgb(54, 42, 42);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
-  max-width: 760px;
-  margin: 24px auto;
-  padding: 0 16px;
+    max-width: 760px;
+    margin: 24px auto;
+    padding: 0 16px;
 }
 
 section {
-  background: #ffffff; /* explicit white background */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 h2,
 h3 {
-  color: #8e0000;
-  margin-top: 0;
+    color: #070707;
+    margin-top: 0;
 }
 
 .features {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
 }
 
 .features li {
-  background-color: #e6f6f1;
-  border-left: 4px solid #0ba184;
-  padding: 12px;
-  border-radius: 6px;
+    background-color: #e6f6f1;
+    border-left: 4px solid #defcf6;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 8px 12px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
 }
 
 th {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
-/* 7. Forms - keeping this comment as is */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font: inherit;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
 }
 
 input:focus,
 textarea:focus {
-  outline: 2px solid #0ba184;
-  border-color: #0ba184;
+    outline: 2px solid #fdfdfd;
+    border-color: #f9fcfb;
 }
 
 button {
-  align-self: flex-start;
-  background-color: #0ba184;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+    align-self: flex-start;
+    background-color: #e988d1;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #088a70;
-  transform: translateY(-2px);
+    background-color: #088a70;
+    transform: translateY(-2px);
 }
 
 footer {
-  text-align: center;
-  color: #777;
-  padding: 16px;
+    text-align: center;
+    color: #777;
+    padding: 16px;
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 16px 12px 12px;
-  }
+    header {
+        padding: 16px 12px 12px;
+    }
 
-  header h1 {
-    font-size: 1.6rem;
-  }
+    header h1 {
+        font-size: 1.6rem;
+    }
 
-  section {
-    padding: 16px;
-  }
+    section {
+        padding: 16px;
+    }
 }
